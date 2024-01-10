@@ -1,6 +1,8 @@
 # React_CRUD_App
 ReactJS CRUD app using local storage for storing data with user authentication.
 
+## Live: https://jat-dev-crud.vercel.app/
+
 ## Pages:
 - Registration page.
 - Login page.
