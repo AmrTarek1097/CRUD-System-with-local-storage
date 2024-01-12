@@ -17,7 +17,7 @@ ReactJS CRUD app using local storage for storing data with user authentication.
   
 ## libraries:
 - Tailwind Css.
-- Joi (For Validation) used Regex. --> note: please pay attention to the signUp inputs formats required.
+- Joi (For Validation) used Regex. 
 - React Icons. 
 - uuid (id generator). 
 - React router dom. 
