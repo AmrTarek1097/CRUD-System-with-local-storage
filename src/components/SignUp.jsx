@@ -87,7 +87,7 @@ const SignUp = () => {
         } else if (err.context.label === "name") {
           err.message = "Name must be at least 3 characters";
         } else {
-          err.message = "Invalid mail format! only TLD 'com' allowed.";
+          err.message = "Invalid email.";
         }
       })}
 
