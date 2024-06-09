@@ -47,7 +47,7 @@ const SignUp = () => {
         .required(),
       password: Joi.string()
         .required()
-        .pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{4,}$/),   
+        .pattern(/^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/),   
     });
     
     return scheme.validate(inputValues, { abortEarly: false });
@@ -83,7 +83,7 @@ const SignUp = () => {
       {errorList.forEach((err) => {
         if (err.context.label === "password") {
           err.message =
-            "Min 4 characters, at least 1 uppercase letter, 1 lowercase letter and one number.";
+            "Min 8 characters, at least one uppercase letter, at least one digit.";
         } else if (err.context.label === "name") {
           err.message = "Name must be at least 3 characters";
         } else {
